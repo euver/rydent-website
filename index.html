@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RYDENT — Find. Check. Connect. | Secondhand Vehicle App</title>
+  <meta name="description" content="RYDENT is a mobile app for buying and selling secondhand motorcycles and cars, with built-in vehicle verification and stolen-vehicle alerts.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress"></div>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-in">
+    <a href="#home" class="brand"><img src="img/logo.png" alt="" class="brand-img"><span>RYDENT</span></a>
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#prototype">Our Prototype</a>
+      <a href="#team">Our Team</a>
+      <a href="#contact" class="menu-cta">Join the Waitlist</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Home -->
+<section class="home" id="home">
+  <div class="wrap bento">
+    <div class="t t-hero w4">
+      <h1>Secondhand Vehicles You Can <em>Actually Trust</em></h1>
+      <p class="lead">A mobile app for buying and selling secondhand motorcycles and cars, with built-in vehicle verification and stolen-vehicle alerts.</p>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-blue">Join the Waitlist</a>
+        <a href="#preview" class="btn btn-outline">Tour the App</a>
+      </div>
+    </div>
+
+    <div class="t t-video w4">
+      <video autoplay muted loop controls playsinline preload="auto" poster="img/video-poster.jpg">
+        <source src="video/rydent-promo.mp4" type="video/mp4">
+        Your browser does not support the video tag. <a href="video/rydent-promo.mp4">Download the video</a>.
+      </video>
+    </div>
+
+    <div class="t dark w2 t-quote">
+      <p class="q">&ldquo;Don&rsquo;t trust the story. Check the vehicle.&rdquo;</p>
+      <span class="q-by">The RYDENT rule</span>
+    </div>
+    <div class="t tint t-ok">
+      <span class="pill ok">&#10003;</span>
+      <h3>No matching report</h3>
+      <p>A clean check, in seconds.</p>
+    </div>
+    <div class="t blue t-warn">
+      <span class="pill bad">!</span>
+      <h3>Do not proceed</h3>
+      <p>Stolen-vehicle alerts before you pay.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Us -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">About us</span>
+      <h2 class="h-xl">About <span class="blue">RYDENT</span></h2>
+    </div>
+    <div class="bento">
+      <div class="t t-phone h2">
+        <img src="img/screens/onboarding.jpg" alt="RYDENT landing screen">
+      </div>
+      <div class="t w3 t-about">
+        <h3 class="t-title">Building safer and smarter vehicle transactions</h3>
+        <p class="lead">RYDENT is a mobile app that helps buyers and sellers of secondhand motorcycles and cars make safer, more confident deals through vehicle verification and stolen-vehicle alerts.</p>
+        <p class="lead">A student startup project of Davao del Norte State College, built by team FRAVEX in Panabo City, Davao del Norte. In October 2026 we tested the prototype with 20 potential customers and used their feedback to improve it.</p>
+      </div>
+      <div class="t">
+        <div class="ico-circle">&#9678;</div>
+        <h3>Our Mission</h3>
+        <p>To make buying and selling secondhand vehicles safer and more transparent, with built-in verification and stolen-vehicle alerts.</p>
+      </div>
+      <div class="t">
+        <div class="ico-circle">&#9673;</div>
+        <h3>Our Vision</h3>
+        <p>A future where every secondhand vehicle deal is built on trust, so buyers, sellers and owners can deal with confidence.</p>
+      </div>
+      <div class="t blue t-quote">
+        <p class="q">&ldquo;A good deal feels better when it&rsquo;s a clean one.&rdquo;</p>
+      </div>
+
+      <div class="t dark w4 t-problem">
+        <span class="kicker">The problem</span>
+        <h3>Buyers can&rsquo;t tell if a vehicle is <span>stolen</span> before they pay.</h3>
+        <p>They rely on the seller&rsquo;s word, and stolen-vehicle reports never reach them.</p>
+      </div>
+      <div class="t w2 t-list">
+        <h3><span class="num">01</span> The Pains</h3>
+        <ul>
+          <li>Buyers depend heavily on the seller&rsquo;s word and documents.</li>
+          <li>Stolen vehicles may be advertised without the buyer knowing.</li>
+          <li>Vehicle details and theft reports are scattered across sources.</li>
+          <li>Checking a vehicle takes extra time and effort.</li>
+        </ul>
+      </div>
+      <div class="t w2 t-list">
+        <h3><span class="num">02</span> The Gaps</h3>
+        <ul>
+          <li>Marketplaces connect people but rarely verify vehicles.</li>
+          <li>Theft reports are shared on social media and may never reach buyers.</li>
+          <li>Buyers need an organized alert when a vehicle matches a report.</li>
+          <li>Owners need one clear place to report a stolen vehicle.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Prototype -->
+<section class="section" id="prototype">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">Features</span>
+      <h2 class="h-xl">Our <span class="blue">Prototype</span></h2>
+    </div>
+    <div class="bento feat-bento">
+      <article class="t feat">
+        <svg class="fi" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l6 6"/></svg>
+        <h3>Vehicle Marketplace</h3>
+        <p>Buy and sell motorcycles, cars, trucks and vans in one place.</p>
+      </article>
+
+      <article class="t feat blue w2 h2 f-verify">
+        <svg class="fi" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+        <h3>Vehicle Verification</h3>
+        <p>At the viewing, enter the plate, chassis or engine number. The app compares them with reported stolen-vehicle records and shows a clear result.</p>
+        <div class="phones">
+          <img src="img/screens/result-clear.jpg" alt="No matching report screen" loading="lazy">
+          <img src="img/screens/result-stolen.jpg" alt="Stolen-vehicle alert screen" loading="lazy">
+        </div>
+      </article>
+
+      <article class="t feat">
+        <svg class="fi" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+        <h3>Private Information</h3>
+        <p>Plate, chassis, engine and OR/CR details are never shown on listings.</p>
+      </article>
+      <article class="t feat">
+        <svg class="fi" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        <h3>Sell a Vehicle</h3>
+        <p>List with photos, price, mileage and details in minutes.</p>
+      </article>
+      <article class="t feat">
+        <svg class="fi" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.5-2 5.5-2 6 0M14 10h4M14 13h3"/></svg>
+        <h3>Verified Sellers</h3>
+        <p>Sellers upload an ID and a selfie. Buyers see a verified badge.</p>
+      </article>
+
+      <article class="t feat">
+        <svg class="fi" viewBox="0 0 24 24"><path d="M5 21V4M5 4h12l-2 4 2 4H5"/></svg>
+        <h3>Stolen Vehicle Reporting</h3>
+        <p>Owners report a stolen vehicle in three steps and track each report.</p>
+      </article>
+      <article class="t feat dark w2">
+        <svg class="fi" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+        <h3>Stolen Vehicle Alerts</h3>
+        <p>If a vehicle you&rsquo;re checking matches a verified stolen-vehicle report, you get a red &ldquo;Do not proceed&rdquo; alert with what to do next.</p>
+      </article>
+      <article class="t feat">
+        <svg class="fi" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>
+        <h3>Messaging</h3>
+        <p>Chat with the seller to confirm details and set a viewing.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">Process</span>
+      <h2 class="h-xl">How it <span class="blue">works</span></h2>
+    </div>
+    <div class="bento">
+      <article class="t"><span class="stn">1</span><h3>Find</h3><p>Search by make, model or city and open a listing to see price, mileage and seller.</p></article>
+      <article class="t"><span class="stn">2</span><h3>Check</h3><p>Enter the plate, chassis and engine numbers at the viewing.</p></article>
+      <article class="t"><span class="stn">3</span><h3>Get the result</h3><p>&ldquo;No Matching Report Found&rdquo; or a red &ldquo;Do not proceed&rdquo; warning.</p></article>
+      <article class="t"><span class="stn">4</span><h3>Connect</h3><p>Check the seller&rsquo;s profile and ID badge, then chat to arrange the viewing.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Who It Is For -->
+<section class="section" id="built-for">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">Audience</span>
+      <h2 class="h-xl">Who it&rsquo;s <span class="blue">for</span></h2>
+    </div>
+    <div class="bento">
+      <article class="t"><span class="tagp">Buyers</span><h3>Secondhand Vehicle Buyers</h3><p>Affordable cars and motorcycles with reliable information before you pay.</p></article>
+      <article class="t"><span class="tagp">Sellers</span><h3>Vehicle Sellers</h3><p>A simple way to list a pre-owned vehicle, with a verified profile that builds trust.</p></article>
+      <article class="t"><span class="tagp">Dealers</span><h3>Dealers &amp; Resellers</h3><p>Reach more buyers through a trusted, verified marketplace.</p></article>
+      <article class="t"><span class="tagp">Owners</span><h3>Owners Worried About Theft</h3><p>Report a stolen vehicle and check alerts, all in one app.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Quotes -->
+<section class="section quotes" id="words">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">Words we ride by</span>
+      <h2 class="h-xl">What we <span class="blue">believe</span></h2>
+    </div>
+    <div class="bento">
+      <blockquote class="t dark w2 h2 big-q"><p>&ldquo;Every ride should start with trust.&rdquo;</p></blockquote>
+      <blockquote class="t tint w2"><p>&ldquo;Know before you pay.&rdquo;</p></blockquote>
+      <blockquote class="t blue"><p>&ldquo;Ride safer. Buy smarter.&rdquo;</p></blockquote>
+      <blockquote class="t"><p>&ldquo;Trust is the best feature a vehicle can have.&rdquo;</p></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- App Screens -->
+<section class="section" id="preview">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">Preview</span>
+      <h2 class="h-xl">App <span class="blue">screens</span></h2>
+    </div>
+    <div class="gallery" tabindex="0" aria-label="Prototype screens, scroll sideways">
+      <figure class="gcard"><img src="img/screens/home.jpg" alt="RYDENT Home dashboard screen" loading="lazy"><figcaption><span class="num">FIND</span><h3>Home dashboard</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/listing.jpg" alt="RYDENT Vehicle listing screen" loading="lazy"><figcaption><span class="num">FIND</span><h3>Vehicle listing</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/verify.jpg" alt="RYDENT Verify a vehicle screen" loading="lazy"><figcaption><span class="num">CHECK</span><h3>Verify a vehicle</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/contact.jpg" alt="RYDENT Contact the seller screen" loading="lazy"><figcaption><span class="num">CONNECT</span><h3>Contact the seller</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/sell-vehicle.jpg" alt="RYDENT Sell a vehicle screen" loading="lazy"><figcaption><span class="num">SELL</span><h3>Sell a vehicle</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/report-stolen.jpg" alt="RYDENT Report a stolen vehicle screen" loading="lazy"><figcaption><span class="num">REPORT</span><h3>Report a stolen vehicle</h3></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team -->
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">The people</span>
+      <h2 class="h-xl">Meet our <span class="blue">team</span></h2>
+    </div>
+    <div class="team-grid">
+      <article class="member">
+        <img class="member-photo" src="img/team/fritz-andrei-danoco.jpg" alt="Fritz Andrei C. Danoco" loading="lazy">
+        <div class="member-body"><h3>Fritz Andrei C. Danoco</h3><b>CTO</b><p>Chief Technology Officer. Builds the app and its verification system.</p></div>
+      </article>
+      <article class="member member-ceo">
+        <img class="member-photo" src="img/team/euver-englis.jpg" alt="Euver M. Englis" loading="lazy">
+        <div class="member-body"><h3>Euver M. Englis</h3><b>CEO</b><p>Chief Executive Officer. Leads the vision and direction of RYDENT.</p></div>
+      </article>
+      <article class="member">
+        <img class="member-photo" src="img/team/javed-daganda.jpg" alt="Javed T. Daganda" loading="lazy">
+        <div class="member-body"><h3>Javed T. Daganda</h3><b>CMO</b><p>Chief Marketing Officer. Grows the brand and reaches buyers and sellers.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action -->
+<section class="cta">
+  <div class="wrap cta-in">
+    <div>
+      <h2>Ready to ride safer?</h2>
+      <p>Join the waitlist and be first to try RYDENT, or send us a question.</p>
+    </div>
+    <a href="#contact" class="btn btn-white">Join the Waitlist</a>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section class="section" id="contact">
+  <div class="wrap two">
+    <div>
+      <h2 class="h-xl">Contact <span class="blue">Us</span></h2>
+      <p class="lead">Questions about the app, interested in early access, or want to partner with us? Reach us through any channel.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" class="ico"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg><span><b>Email</b><a href="mailto:rydentPH@gmail.com">rydentPH@gmail.com</a></span></li>
+        <li><svg viewBox="0 0 24 24" class="ico"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span><b>Location</b>Panabo City, Davao del Norte, Philippines</span></li>
+        <li><svg viewBox="0 0 24 24" class="ico"><path d="M14 8V6.5c0-.8.3-1.2 1.3-1.2H17V2h-2.6C11.6 2 10.5 3.7 10.5 6v2H8v3.2h2.5V22H14V11.2h2.7L17 8z"/></svg><span><b>Facebook</b><a href="https://www.facebook.com/RydentPH" target="_blank" rel="noopener">facebook.com/RydentPH</a></span></li>
+      </ul>
+    </div>
+    <div class="form-col">
+      <form class="form-box" action="mailto:rydentPH@gmail.com" method="post" enctype="text/plain">
+        <h3>Join the waitlist / Send an inquiry</h3>
+        <label for="fName">Full name</label>
+        <input id="fName" name="name" type="text" placeholder="Juan Dela Cruz" required>
+        <label for="fEmail">Email address</label>
+        <input id="fEmail" name="email" type="email" placeholder="you@example.com" required>
+        <label for="fRole">I am a</label>
+        <select id="fRole" name="role">
+          <option>Vehicle buyer</option><option>Vehicle seller</option><option>Dealer / reseller</option><option>Vehicle owner</option><option>Other</option>
+        </select>
+        <label for="fMsg">Message</label>
+        <textarea id="fMsg" name="message" rows="4" placeholder="Tell us how we can help" required></textarea>
+        <button class="btn btn-blue" type="submit"><span>Submit</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-foot">
+  <div class="wrap foot">
+    <div class="foot-brand">
+      <a href="#home" class="brand"><img src="img/logo.png" alt="" class="brand-img"><span>RYDENT</span></a>
+      <p>Find. Check. Connect.</p>
+    </div>
+    <p class="foot-bar">&copy; 2026 RYDENT, a product of FRAVEX. Student startup project of Davao del Norte State College.</p>
+  </div>
+</footer>
+</body>
+</html>
