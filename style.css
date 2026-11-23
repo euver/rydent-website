@@ -201,3 +201,5 @@ section[id] { scroll-margin-top: 90px; }
 }
 
 @media (min-width: 601px) and (max-width: 1000px) { .t-hero h1 { font-size: 54px; } .t-hero { padding: 80px 6%; } .t-video { aspect-ratio: 16 / 9; } }
+.figma-preview{text-align:center;margin:30px}
+.figma-preview a{background:#246bfd;color:white;padding:13px 25px;border-radius:30px;text-decoration:none;font-weight:bold}
