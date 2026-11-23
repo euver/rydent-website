@@ -5,30 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RYDENT — Find. Check. Connect. | Secondhand Vehicle App</title>
   <meta name="description" content="RYDENT is a mobile app for buying and selling secondhand motorcycles and cars, with built-in vehicle verification and stolen-vehicle alerts.">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="progress"></div>
+<!-- Scroll-progress bar (decorative; animated purely in CSS) -->
+<div class="progress" aria-hidden="true"></div>
 
-<!-- Header -->
+<!-- HEADER / NAVIGATION  -->
 <header class="header">
   <div class="header-in">
-    <a href="#home" class="brand"><img src="logo.png" alt="" class="brand-img"><span>RYDENT</span></a>
-    <nav class="menu">
+    <a href="#home" class="brand"><img src="img/logo.png" alt="" class="brand-img"><span>RYDENT</span></a>
+    <nav class="menu" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#about">About Us</a>
       <a href="#prototype">Our Prototype</a>
+      <a href="#preview">App Screens</a>
       <a href="#team">Our Team</a>
+      <!-- Highlighted call-to-action button styled by .menu-cta -->
       <a href="#contact" class="menu-cta">Join the Waitlist</a>
     </nav>
   </div>
 </header>
 
-<!-- Home -->
+<main>
+
+<!--  HOME -->
+
 <section class="home" id="home">
   <div class="wrap bento">
     <div class="t t-hero w4">
@@ -40,13 +46,15 @@
       </div>
     </div>
 
+   
     <div class="t t-video w4">
-      <video autoplay muted loop controls playsinline preload="auto" poster="video-poster.jpg">
-        <source src="rydent-promo.mp4" type="video/mp4">
-        Your browser does not support the video tag. <a href="rydent-promo.mp4">Download the video</a>.
+      <video autoplay muted loop controls playsinline preload="auto" poster="img/video-poster.jpg">
+        <source src="video/rydent-promo.mp4" type="video/mp4">
+        Your browser does not support the video tag. <a href="video/rydent-promo.mp4">Download the video</a>.
       </video>
     </div>
 
+  
     <div class="t dark w2 t-quote">
       <p class="q">&ldquo;Don&rsquo;t trust the story. Check the vehicle.&rdquo;</p>
       <span class="q-by">The RYDENT rule</span>
@@ -64,16 +72,18 @@
   </div>
 </section>
 
-<!-- About Us -->
-<section class="section" id="about">
+<!--  ABOUT US (#about)  -->
+
+<section class="section" id="abt">
   <div class="wrap">
     <div class="sec-head center">
       <span class="kicker">About us</span>
       <h2 class="h-xl">About <span class="blue">RYDENT</span></h2>
     </div>
     <div class="bento">
+
       <div class="t t-phone h2">
-        <img src="onboarding.jpg" alt="RYDENT landing screen">
+        <img src="img/screens/onboarding.jpg" alt="RYDENT landing screen">
       </div>
       <div class="t w3 t-about">
         <h3 class="t-title">Building safer and smarter vehicle transactions</h3>
@@ -93,11 +103,13 @@
         <p class="q">&ldquo;A good deal feels better when it&rsquo;s a clean one.&rdquo;</p>
       </div>
 
+      <!-- Problem statement -->
       <div class="t dark w4 t-problem">
         <span class="kicker">The problem</span>
         <h3>Buyers can&rsquo;t tell if a vehicle is <span>stolen</span> before they pay.</h3>
         <p>They rely on the seller&rsquo;s word, and stolen-vehicle reports never reach them.</p>
       </div>
+      <!-- Two list tiles: current pains, and gaps in existing marketplaces -->
       <div class="t w2 t-list">
         <h3><span class="num">01</span> The Pains</h3>
         <ul>
@@ -120,7 +132,9 @@
   </div>
 </section>
 
-<!-- Our Prototype -->
+<!-- OUR PROTOTYPE (#prototype) -->
+<!-- Feature cards. Each card = inline SVG icon + title + short description.
+     The large blue card (.f-verify) also shows the two verification result screens. -->
 <section class="section" id="prototype">
   <div class="wrap">
     <div class="sec-head center">
@@ -139,8 +153,8 @@
         <h3>Vehicle Verification</h3>
         <p>At the viewing, enter the plate, chassis or engine number. The app compares them with reported stolen-vehicle records and shows a clear result.</p>
         <div class="phones">
-          <img src="result-clear.jpg" alt="No matching report screen" loading="lazy">
-          <img src="result-stolen.jpg" alt="Stolen-vehicle alert screen" loading="lazy">
+          <img src="img/screens/result-clear.jpg" alt="No matching report screen" loading="lazy">
+          <img src="img/screens/result-stolen.jpg" alt="Stolen-vehicle alert screen" loading="lazy">
         </div>
       </article>
 
@@ -179,7 +193,8 @@
   </div>
 </section>
 
-<!-- How It Works -->
+<!--  HOW IT WORKS (#how) -->
+
 <section class="section" id="how">
   <div class="wrap">
     <div class="sec-head center">
@@ -195,7 +210,8 @@
   </div>
 </section>
 
-<!-- Who It Is For -->
+<!--  WHO IT IS FOR (#built-for)  -->
+
 <section class="section" id="built-for">
   <div class="wrap">
     <div class="sec-head center">
@@ -211,23 +227,8 @@
   </div>
 </section>
 
-<!-- Quotes -->
-<section class="section quotes" id="words">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="kicker">Words we ride by</span>
-      <h2 class="h-xl">What we <span class="blue">believe</span></h2>
-    </div>
-    <div class="bento">
-      <blockquote class="t dark w2 h2 big-q"><p>&ldquo;Every ride should start with trust.&rdquo;</p></blockquote>
-      <blockquote class="t tint w2"><p>&ldquo;Know before you pay.&rdquo;</p></blockquote>
-      <blockquote class="t blue"><p>&ldquo;Ride safer. Buy smarter.&rdquo;</p></blockquote>
-      <blockquote class="t"><p>&ldquo;Trust is the best feature a vehicle can have.&rdquo;</p></blockquote>
-    </div>
-  </div>
-</section>
+<!-- APP SCREENS (#preview)  -->
 
-<!-- App Screens -->
 <section class="section" id="preview">
   <div class="wrap">
     <div class="sec-head center">
@@ -235,15 +236,16 @@
       <h2 class="h-xl">App <span class="blue">screens</span></h2>
     </div>
     <div class="gallery" tabindex="0" aria-label="Prototype screens, scroll sideways">
-      <figure class="gcard"><img src="home.jpg" alt="RYDENT Home dashboard screen" loading="lazy"><figcaption><span class="num">FIND</span><h3>Home dashboard</h3></figcaption></figure>
-      <figure class="gcard"><img src="listing.jpg" alt="RYDENT Vehicle listing screen" loading="lazy"><figcaption><span class="num">FIND</span><h3>Vehicle listing</h3></figcaption></figure>
-      <figure class="gcard"><img src="verify.jpg" alt="RYDENT Verify a vehicle screen" loading="lazy"><figcaption><span class="num">CHECK</span><h3>Verify a vehicle</h3></figcaption></figure>
-      <figure class="gcard"><img src="contact.jpg" alt="RYDENT Contact the seller screen" loading="lazy"><figcaption><span class="num">CONNECT</span><h3>Contact the seller</h3></figcaption></figure>
-      <figure class="gcard"><img src="sell-vehicle.jpg" alt="RYDENT Sell a vehicle screen" loading="lazy"><figcaption><span class="num">SELL</span><h3>Sell a vehicle</h3></figcaption></figure>
-      <figure class="gcard"><img src="report-stolen.jpg" alt="RYDENT Report a stolen vehicle screen" loading="lazy"><figcaption><span class="num">REPORT</span><h3>Report a stolen vehicle</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/home.jpg" alt="RYDENT Home dashboard screen" loading="lazy"><figcaption><span class="num">FIND</span><h3>Home dashboard</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/listing.jpg" alt="RYDENT Vehicle listing screen" loading="lazy"><figcaption><span class="num">FIND</span><h3>Vehicle listing</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/verify.jpg" alt="RYDENT Verify a vehicle screen" loading="lazy"><figcaption><span class="num">CHECK</span><h3>Verify a vehicle</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/contact.jpg" alt="RYDENT Contact the seller screen" loading="lazy"><figcaption><span class="num">CONNECT</span><h3>Contact the seller</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/sell-vehicle.jpg" alt="RYDENT Sell a vehicle screen" loading="lazy"><figcaption><span class="num">SELL</span><h3>Sell a vehicle</h3></figcaption></figure>
+      <figure class="gcard"><img src="img/screens/report-stolen.jpg" alt="RYDENT Report a stolen vehicle screen" loading="lazy"><figcaption><span class="num">REPORT</span><h3>Report a stolen vehicle</h3></figcaption></figure>
     </div>
   </div>
- <div class="figma-preview">
+  <!-- Link to the full interactive Figma prototype (opens in a new tab) -->
+  <div class="figma-preview">
   <a href="https://www.figma.com/proto/OCcgCXvS6ITdlPc76Em6rn/Untitled?node-id=315-14776&p=f"
      target="_blank" rel="noopener noreferrer">
     Explore Our Interactive Prototype ↗
@@ -251,7 +253,10 @@
 </div>
 </section>
 
-<!-- Our Team -->
+
+
+<!--  OUR TEAM (#team)  -->
+
 <section class="section" id="team">
   <div class="wrap">
     <div class="sec-head center">
@@ -260,22 +265,23 @@
     </div>
     <div class="team-grid">
       <article class="member">
-        <img class="member-photo" src="fritz-andrei-danoco.jpg" alt="Fritz Andrei C. Danoco" loading="lazy">
+        <img class="member-photo" src="img/team/fritz-andrei-danoco.jpg" alt="Fritz Andrei C. Danoco" loading="lazy">
         <div class="member-body"><h3>Fritz Andrei C. Danoco</h3><b>CTO</b><p>Chief Technology Officer. Builds the app and its verification system.</p></div>
       </article>
       <article class="member member-ceo">
-        <img class="member-photo" src="euver-englis.jpg" alt="Euver M. Englis" loading="lazy">
+        <img class="member-photo" src="img/team/euver-englis.jpg" alt="Euver M. Englis" loading="lazy">
         <div class="member-body"><h3>Euver M. Englis</h3><b>CEO</b><p>Chief Executive Officer. Leads the vision and direction of RYDENT.</p></div>
       </article>
       <article class="member">
-        <img class="member-photo" src="javed-daganda.jpg" alt="Javed T. Daganda" loading="lazy">
+        <img class="member-photo" src="img/team/javed-daganda.jpg" alt="Javed T. Daganda" loading="lazy">
         <div class="member-body"><h3>Javed T. Daganda</h3><b>CMO</b><p>Chief Marketing Officer. Grows the brand and reaches buyers and sellers.</p></div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- Call To Action -->
+<!--  CALL TO ACTION -->
+
 <section class="cta">
   <div class="wrap cta-in">
     <div>
@@ -286,7 +292,8 @@
   </div>
 </section>
 
-<!-- Contact Us -->
+<!-- CONTACT US (#contact) -->
+
 <section class="section" id="contact">
   <div class="wrap two">
     <div>
@@ -295,10 +302,11 @@
       <ul class="contact-list">
         <li><svg viewBox="0 0 24 24" class="ico"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg><span><b>Email</b><a href="mailto:rydentPH@gmail.com">rydentPH@gmail.com</a></span></li>
         <li><svg viewBox="0 0 24 24" class="ico"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span><b>Location</b>Panabo City, Davao del Norte, Philippines</span></li>
-        <li><svg viewBox="0 0 24 24" class="ico"><path d="M14 8V6.5c0-.8.3-1.2 1.3-1.2H17V2h-2.6C11.6 2 10.5 3.7 10.5 6v2H8v3.2h2.5V22H14V11.2h2.7L17 8z"/></svg><span><b>Facebook</b><a href="https://www.facebook.com/RydentPH" target="_blank" rel="noopener"> Rydent</a></span></li>
+        <li><svg viewBox="0 0 24 24" class="ico"><path d="M14 8V6.5c0-.8.3-1.2 1.3-1.2H17V2h-2.6C11.6 2 10.5 3.7 10.5 6v2H8v3.2h2.5V22H14V11.2h2.7L17 8z"/></svg><span><b>Facebook</b><a href="https://www.facebook.com/RydentPH" target="_blank" rel="noopener noreferrer">Rydent</a></span></li>
       </ul>
     </div>
     <div class="form-col">
+      <!-- Submitting opens the visitor's email app addressed to the team -->
       <form class="form-box" action="mailto:rydentPH@gmail.com" method="post" enctype="text/plain">
         <h3>Join the waitlist / Send an inquiry</h3>
         <label for="fName">Full name</label>
@@ -317,11 +325,13 @@
   </div>
 </section>
 
-<!-- Footer -->
+</main>
+
+<!--  FOOTER  -->
 <footer class="site-foot">
   <div class="wrap foot">
     <div class="foot-brand">
-      <a href="#home" class="brand"><img src="logo.png" alt="" class="brand-img"><span>RYDENT</span></a>
+      <a href="#home" class="brand"><img src="img/logo.png" alt="" class="brand-img"><span>RYDENT</span></a>
       <p>Find. Check. Connect.</p>
     </div>
     <p class="foot-bar">&copy; 2026 RYDENT, a product of FRAVEX. Student startup project of Davao del Norte State College.</p>
